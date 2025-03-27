@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 4: Вступ до JavaScript</title>
+</head>
+<body>
+  <h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+
+  <script>
+    // Завдання 1: Привітання користувача
+    const userName = prompt("Як тебе звати?");
+    const greeting = `Привіт, ${userName}! Радий тебе бачити!`;
+    alert(greeting);
+    console.log(greeting);
+
+    // Завдання 2: Проста арифметика
+    const num1 = parseFloat(prompt("Введіть перше число:"));
+    const num2 = parseFloat(prompt("Введіть друге число:"));
+    const variantNumber = 8; // Ваш номер варіанту, змініть при необхідності
+
+    if (variantNumber % 2 === 0) {
+      const sum = num1 + num2;
+      const diff = num1 - num2;
+      alert(`Сума: ${sum}, Різниця: ${diff}`);
+      console.log(`Сума: ${sum}, Різниця: ${diff}`);
+    } else {
+      const product = num1 * num2;
+      const division = num1 / num2;
+      alert(`Добуток: ${product}, Частка: ${division}`);
+      console.log(`Добуток: ${product}, Частка: ${division}`);
+    }
+
+    // Завдання 3: Обчислення віку користувача
+    const birthYear = parseInt(prompt("Введіть ваш рік народження:"));
+    const currentYear = 2025; // Поточний рік
+    const userAge = currentYear - birthYear;
+    const myAge = 30; // Ваш вік, змініть на реальний
+    const ageDifference = Math.abs(myAge - userAge);
+
+    if (userAge > myAge) {
+      alert(`Ваш вік: ${userAge}. Ви старші за мене на ${ageDifference} років.`);
+      console.log(`Ваш вік: ${userAge}. Ви старші за мене на ${ageDifference} років.`);
+    } else if (userAge < myAge) {
+      alert(`Ваш вік: ${userAge}. Ви молодші за мене на ${ageDifference} років.`);
+      console.log(`Ваш вік: ${userAge}. Ви молодші за мене на ${ageDifference} років.`);
+    } else {
+      alert(`Ваш вік: ${userAge}. У нас однаковий вік!`);
+      console.log(`Ваш вік: ${userAge}. У нас однаковий вік!`);
+    }
+  </script>
+</body>
+</html>

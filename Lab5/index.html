@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маніпуляція DOM та події</title>
+    <style>
+        /* Основні стилі */
+        body {
+            background-color: green; /* Фон сайту зелений */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center; /* Усе посередині */
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            padding: 20px;
+            background-color: darkgreen;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Стиль для кнопок */
+        button {
+            background-color: white;
+            color: green;
+            border: none;
+            border-radius: 15px; /* Закруглені краї */
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: lightgreen;
+            color: darkgreen;
+        }
+
+        /* Для динамічних елементів */
+        #dynamic-elements {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Маніпуляція DOM та події</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Зміна тексту</h2>
+            <p id="text">Цей текст можна змінити, натиснувши кнопку.</p>
+            <button id="change-text-btn">Змінити текст</button>
+        </section>
+        <section>
+            <h2>Додавання елементів</h2>
+            <button id="add-element-btn">Додати елемент</button>
+            <div id="dynamic-elements"></div>
+        </section>
+        <section>
+            <h2>Подія кліку</h2>
+            <button id="variant-btn">Натисніть 5 разів!</button>
+        </section>
+    </main>
+    <footer>
+        <p>Лабораторна робота 5 - 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
