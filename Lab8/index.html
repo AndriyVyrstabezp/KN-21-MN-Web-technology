@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Список справ</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Список справ</h1>
+  </header>
+  <main>
+    <section>
+      <button id="refreshButton">Оновити</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Назва</th>
+          </tr>
+        </thead>
+        <tbody id="todosTable"></tbody>
+      </table>
+      <form id="addTodoForm">
+        <label for="todoName">Назва справи:</label>
+        <input type="text" id="todoName" name="todoName" required>
+        <button type="submit">Додати</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Список справ. Всі права захищені.</p>
+  </footer>
+</body>
+</html>
