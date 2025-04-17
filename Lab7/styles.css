@@ -1,0 +1,96 @@
+/* Загальний стиль */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0078d7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Завдання 1: Кнопка */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.button:active {
+  transform: scale(1.1);
+}
+
+/* Завдання 2: Розгортання блоку */
+.content {
+  width: 300px;
+  max-height: 50px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  transition: max-height 0.5s ease;
+}
+
+.content:hover {
+  max-height: 200px;
+}
+
+/* Завдання 3: Анімація блоку */
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Індивідуальне завдання: Коло */
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
