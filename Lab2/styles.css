@@ -38,8 +38,8 @@ ul {
 
 /* Унікальна секція */
 #my-section {
-    background-color: #e0f7fa; /* HEX-колір */
-    text-align: center; /* Центрування тексту */
+    background-color: #3333; /* HEX-колір */
+    text-align: right; /* Центрування тексту */
     padding: 25px; /* Відступ, що відповідає прикладу */
     margin: 20px 0;
 }
