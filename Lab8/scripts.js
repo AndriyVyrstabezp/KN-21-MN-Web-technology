@@ -1,19 +1,5 @@
-// Початковий список адекватних справ
-const initialTodos = [
-  { id: 1, title: "Завершити читання книги" },
-  { id: 2, title: "Прибрати кімнату" },
-  { id: 3, title: "Купити продукти" },
-  { id: 4, title: "Написати звіт для роботи" },
-  { id: 5, title: "Полити рослини" },
-  { id: 6, title: "Зробити зарядку" },
-  { id: 7, title: "Відвідати лікаря" },
-  { id: 8, title: "Спланувати відпустку" },
-  { id: 9, title: "Зателефонувати другу" },
-  { id: 10, title: "Приготувати вечерю" }
-];
-
-// Поточний список справ (може змінюватись)
-let todos = [...initialTodos];
+// Поточний список справ
+let todos = [];
 
 // Функція для заповнення таблиці справ
 function populateTable() {
@@ -25,10 +11,22 @@ function populateTable() {
   });
 }
 
+// Функція для завантаження даних з JSONPlaceholder
+function fetchTodos() {
+  fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
+    .then(response => response.json())
+    .then(data => {
+      todos = data;
+      populateTable();
+    })
+    .catch(error => {
+      console.error('Помилка при завантаженні даних:', error);
+    });
+}
+
 // Обробник для кнопки "Оновити"
 document.getElementById("refreshButton").addEventListener("click", () => {
-  todos = [...initialTodos]; // Скидання до початкового списку
-  populateTable();
+  fetchTodos();
 });
 
 // Обробник для додавання нової справи
@@ -50,4 +48,4 @@ document.getElementById("addTodoForm").addEventListener("submit", event => {
 });
 
 // Завантаження початкового списку при відкритті сторінки
-populateTable();
+fetchTodos();
