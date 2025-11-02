@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>REST Countries — Варіант 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Практична робота — REST Countries API (Варіант 3)</h1>
+    <p class="subtitle">fetch → інформація про Україну; axios → список усіх країн</p>
+  </header>
+
+  <main class="container">
+    <section id="ukraine-section" class="card">
+      <h2>Інформація про Україну</h2>
+      <div id="ukraine-loading" class="loading">Чекайте — завантажую дані...</div>
+      <div id="ukraine-error" class="error" hidden></div>
+
+      <div id="ukraine-data" class="country-details" hidden>
+        <img id="ukraine-flag" alt="Прапор України" />
+        <div id="ukraine-info"></div>
+      </div>
+
+      <div class="buttons">
+        <button id="fetch-ukraine-btn">Оновити (fetch)</button>
+      </div>
+    </section>
+
+    <section id="all-section" class="card">
+      <h2>Список усіх країн</h2>
+      <div id="all-loading" class="loading" hidden>Завантаження списку країн...</div>
+      <div id="all-error" class="error" hidden></div>
+
+      <div class="controls">
+        <button id="axios-all-btn">Завантажити (axios)</button>
+        <input id="search" placeholder="Пошук країни (назва)..." />
+      </div>
+
+      <div id="countries-container" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>API: <a href="https://restcountries.com" target="_blank" rel="noopener">restcountries.com</a> — приклад виконання варіанту 3</small>
+  </footer>
+
+  <!-- axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
