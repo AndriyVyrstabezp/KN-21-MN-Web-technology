@@ -1,0 +1,10 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.19.0",
+    "express-validator": "^7.0.1"
+  }
+}

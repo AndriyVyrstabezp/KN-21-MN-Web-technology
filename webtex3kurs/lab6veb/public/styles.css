@@ -1,0 +1,44 @@
+body {
+    font-family: Arial;
+    background: #f3f3f3;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.add-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-form input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.add-form button {
+    padding: 10px 20px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    width: 500px;
+    margin: auto;
+}
+
+.task {
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}

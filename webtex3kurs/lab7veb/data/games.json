@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Minecraft",
+    "genre": "Sandbox"
+  },
+  {
+    "id": 2,
+    "title": "The Witcher 3",
+    "genre": "RPG"
+  },
+  {
+    "id": 3,
+    "title": "танки",
+    "genre": "онлайн симулятор"
+  }
+]

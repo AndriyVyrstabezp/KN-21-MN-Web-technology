@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог ігор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Каталог ігор (CRUD + JSON)</h1>
+
+<div class="form">
+  <input id="title" placeholder="Назва гри">
+  <input id="genre" placeholder="Жанр">
+  <button onclick="addGame()">Додати</button>
+</div>
+
+<div class="filter">
+  <input id="search" placeholder="Пошук за жанром..." oninput="filterGames()">
+</div>
+
+<ul id="gamesList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>

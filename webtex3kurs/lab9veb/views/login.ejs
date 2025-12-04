@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Вхід</title>
+</head>
+<body>
+  <h1>Вхід</h1>
+
+  <% if (flash.error) { %>
+    <div style="color:red">
+      <% flash.error.forEach(e => { %>
+        <p><%= e %></p>
+      <% }) %>
+    </div>
+  <% } %>
+
+  <% if (flash.success) { %>
+    <div style="color:green">
+      <% flash.success.forEach(m => { %>
+        <p><%= m %></p>
+      <% }) %>
+    </div>
+  <% } %>
+
+  <form method="POST">
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br><br>
+
+    <label>Пароль:</label><br>
+    <input type="password" name="password"><br><br>
+
+    <button type="submit">Увійти</button>
+  </form>
+
+  <p>Нема акаунта? <a href="/register">Зареєструватися</a></p>
+
+</body>
+</html>

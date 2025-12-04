@@ -1,0 +1,14 @@
+[
+  {
+    "item": "qwd",
+    "quantity": "3",
+    "category": "fc",
+    "price": "33"
+  },
+  {
+    "item": "банан",
+    "quantity": "3",
+    "category": "фрукти",
+    "price": "33"
+  }
+]
