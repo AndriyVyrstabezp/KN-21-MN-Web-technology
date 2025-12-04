@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Редагування</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Редагувати дані студента</h2>
+
+<form action="/update" method="POST">
+  <label>Ім'я:</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>Група:</label><br>
+  <input type="text" name="group" required><br><br>
+
+  <label>Повідомлення:</label><br>
+  <textarea name="message" required></textarea><br><br>
+
+  <button type="submit">Зберегти</button>
+</form>
+
+</body>
+</html>
